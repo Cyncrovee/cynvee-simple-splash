@@ -5,7 +5,7 @@ function M.setup(opts)
 
     if opts then
         math.randomseed()
-        require("notify")(opts[math.random(1, #opts)])
+        vim.notify(opts[math.random(1, #opts)])
     else
     end
 end
